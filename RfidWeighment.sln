@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RfidWeighment", "RfidWeighment\RfidWeighment.vbproj", "{3BE7EFC4-FE30-4AC7-B81B-B5DB3A9310FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BE7EFC4-FE30-4AC7-B81B-B5DB3A9310FF}.Debug|x86.ActiveCfg = Debug|x86
+		{3BE7EFC4-FE30-4AC7-B81B-B5DB3A9310FF}.Debug|x86.Build.0 = Debug|x86
+		{3BE7EFC4-FE30-4AC7-B81B-B5DB3A9310FF}.Release|x86.ActiveCfg = Release|x86
+		{3BE7EFC4-FE30-4AC7-B81B-B5DB3A9310FF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
