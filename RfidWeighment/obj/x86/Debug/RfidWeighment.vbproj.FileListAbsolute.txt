@@ -27,3 +27,32 @@ D:\New folder (2)\RfidWeighment\RfidWeighment\bin\Debug\AxInterop.AXVLC.dll
 D:\New folder (2)\RfidWeighment\RfidWeighment\obj\x86\Debug\AxInterop.AXVLC.dll
 D:\New folder (2)\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmItemMaster.resources
 D:\New folder (2)\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmBrowser.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\Interop.AXVLC.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\Interop.MediaPlayer.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\Interop.WMPLib.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\AxInterop.AXVLC.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.vbproj.ResolveComReference.cache
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.exe
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.xml
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.pdb
+C:\RfidWeighment\RfidWeighment\bin\Debug\RfidWeighment.exe
+C:\RfidWeighment\RfidWeighment\bin\Debug\RfidWeighment.pdb
+C:\RfidWeighment\RfidWeighment\bin\Debug\RfidWeighment.xml
+C:\RfidWeighment\RfidWeighment\bin\Debug\Interop.AXVLC.dll
+C:\RfidWeighment\RfidWeighment\bin\Debug\Interop.WMPLib.dll
+C:\RfidWeighment\RfidWeighment\bin\Debug\AxInterop.AXVLC.dll
+C:\RfidWeighment\RfidWeighment\bin\Debug\AxInterop.WMPLib.dll
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmItemMaster.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmBrowser.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmWeightConfig.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.Form1.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmTokenEntry.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.FrmWeighment.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.LoginForm.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.MainFrom.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.Resources.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.Player.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.SplashScreen.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.Weight.resources
+C:\RfidWeighment\RfidWeighment\obj\x86\Debug\RfidWeighment.vbproj.GenerateResource.Cache

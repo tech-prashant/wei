@@ -27,6 +27,7 @@ Public Class ConnectionClass
             id = columns(2)
             Pass = columns(3)
             Db_Type = columns(4)
+            DBFILEName = columns(5)
         End Using
         If Db_Type = 1 Then
             Dim connectionString As String = "Server=" + Server_name + ";Database=" + database_name + ";User Id= " + id + " ;Password=" + Pass + ";"
@@ -55,11 +56,10 @@ Public Class ConnectionClass
             Dim appPath As String = Application.StartupPath
 
             ' Combine the application path with the relative path to your database
-            Dim databasePath As String = System.IO.Path.Combine(appPath, "Weight.accdb")
+            Dim databasePath As String = System.IO.Path.Combine(appPath, DBFILEName)
 
             ' Define the connection string using the application directory path
-            Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source={" & databasePath & "};Persist Security Info=False;"
-
+            Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & databasePath & ";Persist Security Info=False;"
             ' Create a new OleDbConnection object
             Using connection As New OleDbConnection(connectionString)
                 Try

@@ -7,7 +7,7 @@
     Public filePath As String
     Dim mFormData As String
 
-    Public Server_name, database_name, id, Pass, Db_Type As String
+    Public Server_name, database_name, id, Pass, Db_Type, DBFILEName As String
 
 
     Public Sub Show_Help(ByRef code As TextBox, ByRef Desc As TextBox, ByVal Table As String, Optional ByVal Condition As String = "")
@@ -17,7 +17,7 @@
 
         Select Case Table
             Case "ItemMaster"
-                mFormData = "Select ItemCode as Code, Description as Detail from Item where ActiveFlag = 0 |Item Master |1|1|0"
+                mFormData = "Select PRO_CODE as Code, PRO_NAME as Detail from PRODUCT where PRO_ACTIVE = 0 |Item Master |1|1|0"
 
             Case 2
                 Console.WriteLine("It's Monday.")

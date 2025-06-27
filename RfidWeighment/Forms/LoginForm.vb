@@ -15,7 +15,7 @@ Public Class LoginForm
         End If
         Dim lastLogin = cc.Get_LoginDetail()
 
-        query = "update login set last_login = getdate() ,last_login_detail = '" & lastLogin & "' where user_id = '" & Userid.Text.Trim & "'"
+        query = "update USERS set U_lastlogin = Date(),U_LOG = '" & Environment.MachineName & "' where U_LOGIN = '" & Userid.Text.Trim & "'"
         cc.Ks_Out(query, data, flag, Error_msg)
 
         Dim mf As New MainFrom()
@@ -46,7 +46,7 @@ Public Class LoginForm
             Exit Sub
         End If
         PasswordTextBox.Focus()
-        query = "Select * from login where user_id = '" & Userid.Text.Trim & "' and user_active = 0"
+        query = "Select * from USERS where U_LOGIN = '" & Userid.Text.Trim & "' and U_STATUS = 0 "
         cc.Ks_Out(query, data, flag, Error_msg)
 
 
@@ -56,17 +56,25 @@ Public Class LoginForm
                 Userid.Text = ""
                 Userid.Focus()
             Else
-                UserName.Text = (data.Tables(0).Rows(0)("User_name")).ToString()
-                Usr = UserName.Text.ToString()
-                txtLastlog.Text = (data.Tables(0).Rows(0)("Last_login")).ToString()
 
-                Pass = (data.Tables(0).Rows(0)("pass")).ToString()
+                If (Convert.ToDateTime(data.Tables(0).Rows(0)("U_VALIDITY")).ToString() < DateTime.Now) Then
+
+                    MsgBox(" User Name Expire Contact Admin")
+                    Userid.Text = ""
+                    Userid.Focus()
+                End If
+
+                UserName.Text = (data.Tables(0).Rows(0)("U_NAME")).ToString()
+                Usr = UserName.Text.ToString()
+                txtLastlog.Text = (data.Tables(0).Rows(0)("U_LASTLOGIN"))
+
+                Pass = (data.Tables(0).Rows(0)("U_PASS")).ToString()
                 PasswordTextBox.Focus()
 
-            End If
+                End If
         Else
-            MsgBox(Error_msg)
-            Application.Exit()
+                MsgBox(Error_msg)
+                Application.Exit()
         End If
     
 
