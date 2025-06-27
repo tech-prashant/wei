@@ -29,14 +29,19 @@ Partial Class FrmBrowser
         Me.BtnModify = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtLrNo = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.dataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlOption.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.dataGrid)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -47,9 +52,9 @@ Partial Class FrmBrowser
         '
         Me.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dataGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.dataGrid.Location = New System.Drawing.Point(0, 3)
+        Me.dataGrid.Location = New System.Drawing.Point(0, 48)
         Me.dataGrid.Name = "dataGrid"
-        Me.dataGrid.Size = New System.Drawing.Size(400, 414)
+        Me.dataGrid.Size = New System.Drawing.Size(400, 369)
         Me.dataGrid.TabIndex = 0
         '
         'pnlOption
@@ -110,6 +115,34 @@ Partial Class FrmBrowser
         Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel2.Controls.Add(Me.txtLrNo)
+        Me.Panel2.Controls.Add(Me.Label17)
+        Me.Panel2.Location = New System.Drawing.Point(0, 9)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(400, 33)
+        Me.Panel2.TabIndex = 1
+        '
+        'txtLrNo
+        '
+        Me.txtLrNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.txtLrNo.Location = New System.Drawing.Point(78, 3)
+        Me.txtLrNo.Name = "txtLrNo"
+        Me.txtLrNo.Size = New System.Drawing.Size(319, 26)
+        Me.txtLrNo.TabIndex = 41
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(12, 9)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(65, 20)
+        Me.Label17.TabIndex = 40
+        Me.Label17.Text = "Filter  :"
+        '
         'FrmBrowser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,6 +157,8 @@ Partial Class FrmBrowser
         Me.Panel1.ResumeLayout(False)
         CType(Me.dataGrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlOption.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -134,4 +169,7 @@ Partial Class FrmBrowser
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents BtnModify As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents txtLrNo As System.Windows.Forms.TextBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
 End Class
